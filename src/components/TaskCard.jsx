@@ -1,5 +1,5 @@
 export default function TaskCard({ task }) {
-  // Read the date as local time so it stays on the day the user chose.
+
   const formattedDate = new Date(`${task.dueDate}T00:00:00`).toLocaleDateString('en-GB', {
     day: 'numeric', month: 'short', year: 'numeric',
   });
